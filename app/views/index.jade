@@ -1,5 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  #homeWrapper
+    #featuredVideo
+    <iframe src="//player.vimeo.com/video/17087679" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/17087679">Nowhere Near Here</a> from <a href="http://vimeo.com/pahnl">Pahnl</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  #homeSidebar
+    #previousVideos
+      h4 previous
+    #suggestVideos
+      h4 Suggest
+      form
+        input
+        <br>
+        input
+        #suggestButton
+          a(href="/suggest") Suggest

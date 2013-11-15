@@ -4,4 +4,22 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    #wrap
+      #main
+        #header
+          #logo
+            a(href="/") 
+          #menuButton
+        #content
+          block content
+    #footer
+      #footerCopyright
+        &copy; 2013 Juan Gallardo
+      #footerLinks
+        ul
+          li 
+            a(href="/about") About
+          li 
+            a(href="/privacy") Privacy 
+          li 
+            a(href="/terms") Terms
